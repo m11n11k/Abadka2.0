@@ -1,8 +1,234 @@
 
-.nav-link{
-    padding: 15px 25px;
-    background-color: #808080;
-    text-decoration: none;
-    border-radius: 45px;
+
+.logo{
+    height: 125px;
+    width: 125px;
+    margin-left: 30px;
+}
+header{
+    background-color: black;
+}
+.nav{
     color:white;
+    padding-top: 25px;
+    padding-left: 80px ;
+    padding-right: 80px ;
+    background-color: rgb(128, 128, 128);
+    border-radius: 45px;
+    margin-left:130px ;
+    text-decoration: none;
+    display: inline;
+    width: 90px;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+cart{
+    width: 50px;
+    height: 50px;
+}
+nav{
+    display: flex;
+}
+main{
+    background-color: rgb(128, 128, 128);
+    padding-top: 1px;
+    padding-bottom: 100px;
+    
+}
+.card_img{
+    height: 210px;
+    width: 170px;
+    border-radius: 20px;
+}
+.card{
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    padding: 10px 20px 30px 20px;
+    width: 11%;
+    box-shadow: 1px 1px 50px;
+}
+.buy_btn{
+    color: #d9d9d9;
+    text-align: center;
+    border: none;
+    background-color: rgb(128, 128, 128) ;
+    border-radius: 30px;
+    margin-left: 55px;
+    cursor: pointer;
+    padding: 10px;
+}
+.buy_btn:hover{
+    transition: 0.3s ease-in;
+    background-color: rgb(64, 64, 64);
+    color: #d9d9d9;
+}
+.price{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+#menu{
+    display: none;
+
+}
+label{
+    position: absolute;
+    top: 135px;
+    right: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.8);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -150%;
+    transition: 1s ease;
+}
+.navbar ul li{
+    margin: .5rem;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 3.5rem;
+    color: #fff;
+    transition: 0.3s;
+}
+.navbar ul li a:hover{
+    color: darkmagenta;
+    transition: 0.5s ease-in-out;
+}
+#menu:checked ~ .navbar{
+    left: 0;
+}
+.book_img{
+    width: 60px;
+    height: 60px;
+}
+.book_img:hover{
+    transition: 0.3s ease-out;
+    scale: 1.2;
+}
+.book_genre{
+    text-align: center;
+    font-size: 40px;
+}
+.genre{
+    text-decoration: none;
+    color: violet;
+}
+.cart{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 25px;
+    right: 70px;
+    cursor: pointer;
+}
+.card:hover{
+    scale: 1.1;
+    transition: 0.2s ease-in-out;
+}
+.cart:hover{
+    transition: 0.3s ease-out;
+    scale: 1.2;
+}
+.nav:hover{
+    transition: 0.3s ease-in;
+    background-color: #d9d9d9;
+    color: black;
+    
+}
+.cart-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.cart-content {
+  background-color: white;
+  margin: 8% auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-cart {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-cart:hover {
+  color: black;
+}
+
+#cart-items li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.remove-btn,
+.increase-btn,
+.decrease-btn {
+  background-color: lightgray;
+  border: none;
+  padding: 4px 8px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.increase-btn:hover,
+.decrease-btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+#clear-cart {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-right: 10
 }
