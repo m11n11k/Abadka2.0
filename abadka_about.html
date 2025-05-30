@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <script src="main.js" defer></script>
+    <title>Abadka</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/logo-removebg-preview.png" alt="logo">
+            <a class="nav" href="abadka_main.html">Головна</a>
+            <a class="nav" id="nav2" href="#">Про нас</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img class="book_img" src="img/book.png">
+
+        </label>
+
+        <img class="cart" src="img/shoppingcart-removebg-preview.png" alt="cart">
+        <nav class="navbar">
+            <ul>
+                <li><a class="genre" href="abadka_main.html">Бестселери</a></li>
+                <li><a class="genre" href="horrors.html">Жахи</a></li>
+                <li><a class="genre" href="kazki.html">Казки</a></li>
+                <li><a class="genre" href="adventures.html">Пригоди</a></li>
+                <li><a class="genre" href="scifi.html">Фантастика</a></li>
+                <li><a class="genre" href="anti_utopies.html">Антиутопії</a></li>
+            </ul>
+        </nav>
+
+
+
+        <h1 class="book_genre">Про нас</h1>
+        <ul>
+            <li class="about_us"><strong>Abadka</strong> — сучасний український книжковий магазин.</li>
+            <li class="about_us">Пропонуємо великий вибір:
+                <ul>
+                    <li class="about_us">художньої літератури,</li>
+                    <li class="about_us">науково-популярних книжок,</li>
+                    <li class="about_us">дитячих видань.</li>
+                </ul>
+            </li>
+            <li class="about_us">Працюємо лише з перевіреними видавництвами та авторами.</li>
+            <li class="about_us">Підтримуємо українську мову й культуру через книгу.</li>
+            <li class="about_us">Зручний сервіс, швидка доставка та приємні ціни.</li>
+        </ul>
+
+    </main>
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Ваш кошик</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Загальна сума: $0</p>
+            <button id="clear-cart">Очистити кошик</button>
+            <button id="checkout">Оформити замовлення</button>
+        </div>
+    </div>
+    <footer>
+        <p class="phone">+38024356789</p>
+        <a href="https://www.instagram.com/"><img class="socials1" src="img/insta-removebg-preview.png" alt=""></a>
+        <a href="https://x.com"><img class="socials" src="img/x.png" alt=""></a>
+        <a href="https://www.facebook.com//"><img class="socials" src="img/facebook.png" alt=""></a>
+    </footer>
+</body>
+<link rel="stylesheet" href="style_main.css">
+
+
+</html>
